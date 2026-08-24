@@ -16,7 +16,10 @@ body {
     user-select: none;
     text-align: center;
     background: linear-gradient(220deg, #1c1b30, #36345a, #8d2929);
-    background-size: cover;
+      background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
     height: 100vh;
     color: aliceblue;
 }
