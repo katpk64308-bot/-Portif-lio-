@@ -1,4 +1,4 @@
-*{
+* {
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -6,7 +6,8 @@
     text-decoration: none;
     list-style: none;
 }
-body{
+
+body {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -18,39 +19,45 @@ body{
     background-size: cover;
     height: 100vh;
     color: aliceblue;
-
 }
+
 .conteudo {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 0 60px;
 }
+
 .conteudo h1,
 .conteudo h2,
 .conteudo h3 {
     margin: 0;
     line-height: 1.2;
 }
+
 .titulo-pagina {
     margin-bottom: 25px !important;
     font-size: 48px;
     text-align: left;
 }
+
 .secao {
     margin-top: 45px;
     text-align: left;
 }
+
 .secao h2 {
     margin-bottom: 22px;
     padding-bottom: 10px;
     border-bottom: 2px solid rgba(0, 247, 255, 0.45);
     color: #00f7ff;
 }
+
 .cartoes-eventos {
     display: flex;
     gap: 20px;
 }
+
 .cartao-evento {
     width: 50%;
     padding: 22px;
@@ -58,21 +65,29 @@ body{
     border-radius: 12px;
     background: rgba(28, 27, 48, 0.45);
 }
+
 .cartao-evento h3 {
     margin-bottom: 12px;
     color: #00ff95;
 }
+
 .cartao-evento p,
 .sobre-mim p {
     line-height: 1.7;
     color: rgba(240, 248, 255, 0.9);
 }
+
 .tecnologias {
     text-align: center;
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 1000px;
     padding: 15px 25px;
 }
+
+.tecnologias .cartao-evento {
+    width: 100%;
+}
+
 .projeto {
     max-width: 700px;
     margin: 0 auto;
@@ -82,25 +97,31 @@ body{
     border-radius: 14px;
     background: rgba(28, 27, 48, 0.5);
 }
+
 .projeto h2 {
     margin-bottom: 12px;
     color: #00f7ff;
 }
+
 .projeto p {
     margin-bottom: 25px;
     line-height: 1.6;
 }
+
 .projeto h3 {
     margin-bottom: 15px;
     color: #00ff95;
 }
+
 .tecnologias-projeto {
     margin-bottom: 25px;
 }
+
 .tecnologias-projeto .icone-tecnologia {
     box-shadow: none;
     background-color: transparent;
 }
+
 .botao-projeto {
     display: inline-block;
     padding: 12px 22px;
@@ -110,20 +131,23 @@ body{
     font-weight: bold;
     transition: background 0.3s ease, transform 0.3s ease;
 }
+
 .botao-projeto:hover {
     background: #00ff95;
     transform: translateY(-2px);
 }
-.sobr{
+
+.sobr {
     text-align: left;
     line-height: 1.6;
 }
 
-.foto{
+.foto {
     float: right;
     width: 180px;
     margin: 0 0 20px 30px;
 }
+
 img {
     max-width: 100%;
     width: 100%;
@@ -131,7 +155,8 @@ img {
     filter: drop-shadow(10px -6px 10px #ffffff);
     border-radius: 12px;
 }
-.sobre-mim{
+
+.sobre-mim {
     max-width: 900px;
     margin: 0 auto 40px;
     padding: 20px;
@@ -143,21 +168,22 @@ img {
     clear: both;
 }
 
-
-.bar{
+.bar {
     position: fixed;
-        top: 0;
-        padding: 20px 50px;
-        width: 90vw;
-        display: flex;
-        justify-content: space-between;
-        z-index: 3;
-        background: #1c1b30ee;
-        width: 100%;
+    top: 0;
+    padding: 20px 50px;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    background: #1c1b30ee;
+    width: 100%;
 }
-.conteudo{
+
+.conteudo {
     margin-top: 6rem;
 }
+
 nav ul {
     display: flex;
     gap: 20px;
@@ -191,6 +217,83 @@ nav ul {
     width: 100%;
 }
 
+.carrossel-tecnologias {
+    width: 100%;
+    overflow: hidden;
+    padding: 35px 0;
+}
+
+.faixa-icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.icone-tecnologia {
+    flex: 0 0 60px;
+    font-size: 45px;
+    padding: 10px;
+    transition: transform 0.35s ease, opacity 0.45s ease;
+}
+
+.icone-tecnologia.central {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.icone-tecnologia.perto {
+    transform: scale(1);
+    opacity: 0.8;
+}
+
+.icone-tecnologia.longe {
+    transform: scale(1);
+    opacity: 0.45;
+}
+
+.icone-tecnologia.saindo {
+    opacity: 0;
+    transform: scale(0.3);
+}
+
+.icone-tecnologia.entrando {
+    opacity: 0;
+    transform: scale(0.3);
+}
+
+.faixa-icones.girando {
+    transform: translateX(-90px);
+}
+
+.faixa-icones.sem-transicao {
+    transition: none;
+}
+
+.icone-tecnologia.pratica {
+    border-radius: 100%;
+    box-shadow: rgb(3, 255, 66) 0 0 25px;
+    background-color: rgba(3, 255, 66, 0.438);
+}
+
+.icone-tecnologia.aprendendo {
+    border-radius: 100%;
+    box-shadow: rgb(255, 3, 3) 0 0 25px;
+    background-color: rgba(255, 3, 3, 0.473);
+}
+
+.tecnologias-projeto .icone-tecnologia {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.icone-tecnologia.sei {
+    border-radius: 100%;
+    box-shadow: rgb(255, 167, 3) 0 0 25px;
+    background-color: rgba(255, 154, 3, 0.479);
+}
+
 @media (max-width: 700px) {
     .cartoes-eventos {
         display: block;
@@ -203,5 +306,14 @@ nav ul {
     .cartao-evento {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .tecnologias {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .tecnologias .cartao-evento {
+        width: 100%;
     }
 }
