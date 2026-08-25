@@ -74,6 +74,20 @@ const paginas = {
         </div>
         <a class="botao-projeto" href="https://katpk64308-bot.github.io/Whim-Bottle/main.html" target="_blank" rel="noopener noreferrer">Ver projeto</a>
     </article>
+   <br>
+      <article class="projeto">
+        <h2>Sakura Nami</h2>
+        <p>Um site simulando um anuncio de restalrante Japone</p>
+        <h3>Tecnologias utilizadas</h3>
+        <div class="tecnologias-projeto">
+            <i class="icone-tecnologia  devicon-html5-plain colored"></i>
+            <i class="icone-tecnologia  devicon-css3-plain colored"></i>
+            <i class="icone-tecnologia  devicon-javascript-plain colored"></i>
+            <i class="icone-tecnologia  devicon-github-original"></i>
+            <i class="icone-tecnologia  devicon-git-plain-wordmark colored"></i>
+        </div>
+        <a class="botao-projeto" href="https://katpk64308-bot.github.io/Restante/" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+    </article>
     `
 };
 
